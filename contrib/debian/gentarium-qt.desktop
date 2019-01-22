@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gentarium
+Comment=Gentarium P2P Cryptocurrency
+Comment[fr]=Gentarium, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Gentarium, eşten eşe kriptografik sanal para birimi
+Exec=gentarium-qt %u
+Terminal=false
+Type=Application
+Icon=gentarium128
+MimeType=x-scheme-handler/gentarium;
+Categories=Office;Finance;
