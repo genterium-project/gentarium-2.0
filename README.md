@@ -1,2 +1,2 @@
-Gentarium Core integration/staging repository
+Gentarium 2.0 Core Proof of Stake repository
 =====================================
