@@ -1,5 +1,5 @@
 ---
-name: "gentarium-aarch64-3.1"
+name: "gentarium-aarch64-2.1"
 enable_cache: true
 suites:
 - "xenial"
@@ -23,9 +23,9 @@ packages:
 - "bsdmainutils"
 - "ca-certificates"
 - "python"
-reference_datetime: "2015-06-01 00:00:00"
+reference_datetime: "2019-01-28 05:00:00"
 remotes:
-- "url": "https://bitbucket.org/flabdevelopmant/gentarium-pos.git"
+- "url": "https://github.com/genterium-project/gentarium-2.0.git"
   "dir": "gentarium"
 files: []
 script: |

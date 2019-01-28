@@ -23,7 +23,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/gentarium-project/gitian.sigs.git
     git clone https://github.com/gentarium-project/gentarium-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://bitbucket.org/flabdevelopmant/gentarium-pos.git
+    git clone https://github.com/genterium-project/gentarium-2.0.git
 
 ### Gentarium maintainers/release engineers, suggestion for writing release notes
 

@@ -235,10 +235,10 @@ QT_TRANSLATE_NOOP("gentarium-core", ""
 QT_TRANSLATE_NOOP("gentarium-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("gentarium-core", "(17117 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("gentarium-core", "(27117 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("gentarium-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("gentarium-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("gentarium-core", "(must be 17117 for mainnet)"),
+QT_TRANSLATE_NOOP("gentarium-core", "(must be 27117 for mainnet)"),
 QT_TRANSLATE_NOOP("gentarium-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("gentarium-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("gentarium-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

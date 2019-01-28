@@ -35,7 +35,6 @@ bool CDevBudget::IsTransactionValid(const CTransaction& txNew, int nBlockHeight)
             if (payee == out.scriptPubKey) {
                 if (i > 0 && out.nValue >= budgetPayment) {
                     found = true;
-                    LogPrintf("CDevBudget::IsTransactionValid - Found valid Dev Budget Payment of %d\n", out.nValue);
                 }
                 else{
                     LogPrintf("CDevBudget::IsTransactionValid - Found valid Dev Budget address, but wrong amount %d\n", out.nValue);
@@ -58,18 +57,20 @@ bool CDevBudget::IsTransactionValid(const CTransaction& txNew, int nBlockHeight)
 
 void CDevBudget::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake)
 {
+    LogPrintf("Entered in CDevBudget::FillBlockPayee\n");
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev){
-        return;
-    }
-
-    if(txNew.vout[1].IsZerocoinMint()){
         return;
     }
 
     PrepareBudget();
 
     unsigned int i = txNew.vout.size();
+
+    if(fProofOfStake && i > 1 && txNew.vout[1].IsZerocoinMint()){
+        return;
+    }
 
     if (txNew.vout[i - 1].nValue > 0) {
         CAmount budgetPayment = GetDevelopersPayment(pindexPrev->nHeight);

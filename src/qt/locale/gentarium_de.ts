@@ -5137,8 +5137,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
-        <source>(17117 could be used only on mainnet)</source>
-        <translation>(17117 kann nur im Mainnet verwendet werden)</translation>
+        <source>(27117 could be used only on mainnet)</source>
+        <translation>(27117 kann nur im Mainnet verwendet werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5149,7 +5149,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 17117 for mainnet)</source>
+        <source>(must be 27117 for mainnet)</source>
         <translation>(muss im Mainnet 51472 sein)</translation>
     </message>
     <message>

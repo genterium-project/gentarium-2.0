@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The Gentarium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -53,11 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0000077da25fcf1369e4e6428abb2e082663a0f2d769d31f393190d6922f8634"));
+    (0, uint256("0000077da25fcf1369e4e6428abb2e082663a0f2d769d31f393190d6922f8634"))
+    (3500, uint256("1d9a7b7f19131de813c0e223b3d61bd0a50f7805d1b850936bdd42d36be56b9d"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1547096400, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1548664459, // * UNIX timestamp of last checkpoint block
+    6519,       // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -113,7 +115,7 @@ public:
         pchMessageStart[2] = 0x54;
         pchMessageStart[3] = 0x4D;
         vAlertPubKey = ParseHex("04308127d8d69a0178f10936a5ac3c6a6aa2235e229a9c22456bbc4acbd4d1d30a5f78dda20918dd11ca4d8b37a29b689467529d81b6bdbe601412ac9038518a48");
-        nDefaultPort = 17117;
+        nDefaultPort = 27117;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Gentarium starting difficulty is 1 / 2^12
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
