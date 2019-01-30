@@ -64,6 +64,7 @@ addnode=116.202.24.242:27117
 ```
 
 <h3>Disable auto zeromint</h3>
+
 ```
 # grntarium.conf
 
@@ -72,7 +73,9 @@ enablezeromint=0
 ```
 
 <h3>Disable/enable staking</h3>
+
 Enabled by default
+
 ```
 #gentarium.conf
 
