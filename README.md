@@ -12,10 +12,10 @@ Gentarium Core proof of stake wallet repository
 <tr><td><strong>TOTAL SUPPLY</strong></td><td> 14 200 000 GTM</td></tr>
 <tr><td><strong>PREMINE</strong></td><td>40 000 GTM</td></tr>
 <tr><td><strong>MASTERNODE COLLATERAL</strong></td><td>1 000 GTM</td></tr>
-<tr><td><strong>BLOCKS PER DAY</strong></td><td>720</td></tr>
-<tr><td><strong>BLOCK TIME</strong></td><td>2 MINUTES</td></tr>
+<tr><td><strong>BLOCKS PER DAY</strong></td><td>1440</td></tr>
+<tr><td><strong>BLOCK TIME</strong></td><td>1 MINUTE</td></tr>
 <tr><td><strong>STAKE MIN AGE</strong></td><td>6 HOURS</td></tr>
-<tr><td><strong>REWARDS</strong></td><td>10 GTM MASTERNODE<br>2 GTM STAKING<br>1 GTM DEV FEE</td></tr>
+<tr><td><strong>REWARDS</strong></td><td>5 GTM MASTERNODE<br>1 GTM STAKING<br>0,5 GTM DEV FEE</td></tr>
 <tr><td><strong>HALVING BLOCK</strong></td><td>160000</td></tr>
 <tr><td><strong>PORT</strong></td><td>27117</td></tr>
 <tr><td><strong>MASTERNODE HOSTING PLATFORM</strong></td><td><a href='https://mn.gtmcoin.io/'>mn.gtmcoin.io</a></td></tr>
