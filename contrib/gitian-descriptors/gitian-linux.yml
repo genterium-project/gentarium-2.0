@@ -1,5 +1,5 @@
 ---
-name: "gentarium-linux-2.1"
+name: "gentarium-linux-2.2"
 enable_cache: true
 suites:
 - "trusty"
@@ -27,7 +27,7 @@ packages:
 - "bsdmainutils"
 - "ca-certificates"
 - "python"
-reference_datetime: "2019-01-28 05:00:00"
+reference_datetime: "2019-01-30 05:00:00"
 remotes:
 - "url": "https://github.com/genterium-project/gentarium-2.0.git"
   "dir": "gentarium"

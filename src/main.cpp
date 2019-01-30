@@ -1809,47 +1809,39 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-    int64_t nSubsidy = 0;
     if (nHeight == 0) {
-        nSubsidy = 2700000 * COIN;
+        return COIN * 2700000;
     } else if (nHeight < Params().LAST_POW_BLOCK() && nHeight >= 0) {
-        nSubsidy = 1 * COIN;
+        return COIN * 1;
     } else if (nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()) {
-        nSubsidy = 13 * COIN;
+        return COIN * 6.5;
     } else {
-        nSubsidy = 7.5 * COIN;
+        return COIN * 3.25;
     }
-    return nSubsidy;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, bool isZGTMStake)
 {
-    int64_t ret = 0;
     if(nHeight < Params().LAST_POW_BLOCK()){
-        ret = 0;
+        return COIN * 0;
     }
     else if(nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()){
-        ret = 11;
+        return COIN * 5.5;
     }
     else{
-        ret = 5.5;
+        return COIN * 2.75;
     }
-
-    return ret * COIN;
 }
 
 int64_t GetDevelopersPayment(int nHeight) {
-    int64_t ret = 0;
 
     if (nHeight <  Params().LAST_POW_BLOCK()) {
-        ret = 0;
+        return COIN * 0;
     } else if (nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()) {
-        ret = 1;
+        return COIN * 0.5;
     } else {
-        ret = 0.5;
+        return COIN * 0.25;
     }
-
-    return ret * COIN;
 }
 
 bool IsInitialBlockDownload()
