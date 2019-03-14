@@ -1816,7 +1816,7 @@ int64_t GetBlockValue(int nHeight)
     } else if (nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()) {
         return COIN * 6.5;
     } else {
-        return COIN * 3.25;
+        return COIN * 1.97;
     }
 }
 
@@ -1825,11 +1825,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, bool isZGTMStake)
     if(nHeight < Params().LAST_POW_BLOCK()){
         return COIN * 0;
     }
-    else if(nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()){
+    else if(nHeight < Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()){
         return COIN * 5.5;
     }
     else{
-        return COIN * 2.75;
+        return COIN * 1.87;
     }
 }
 
@@ -1837,10 +1837,10 @@ int64_t GetDevelopersPayment(int nHeight) {
 
     if (nHeight <  Params().LAST_POW_BLOCK()) {
         return COIN * 0;
-    } else if (nHeight <= Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()) {
+    } else if (nHeight < Params().SubsidyHalvingBlock() && nHeight >= Params().LAST_POW_BLOCK()) {
         return COIN * 0.5;
     } else {
-        return COIN * 0.25;
+        return COIN * 0.17;
     }
 }
 
@@ -4183,7 +4183,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                 if (it == mapStakeSpent.end()) {
                     return false;
                 }
-                if (it->second <= pindexPrev->nHeight) {
+                if (it->second < pindexPrev->nHeight) {
                     return false;
                 }
             }
